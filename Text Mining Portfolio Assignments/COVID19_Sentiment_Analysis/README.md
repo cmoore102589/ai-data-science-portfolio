@@ -1,35 +1,58 @@
-# Project 8 – COVID-19 Tweet Analysis and Classification
+# Project 8: COVID-19 Tweet Sentiment Analysis and Topic Modeling
 
 ## Overview
+This project analyzes public sentiment and thematic trends in tweets related to the COVID-19 pandemic. Using natural language processing (NLP) and machine learning, we clean, preprocess, and classify tweets while also uncovering underlying topics through topic modeling.
 
-This project performs end-to-end text analysis and sentiment classification on COVID-19 tweets. It includes:
-- Text cleaning and tokenization
-- Part-of-speech tagging and named entity recognition (NER)
-- TF-IDF vectorization and topic modeling (LDA)
-- Sentiment classification using Logistic Regression, Random Forest, and SVM with GridSearchCV tuning
-- Data visualization using PCA and scattertext
+## Dataset
+- **Source**: [Kaggle: Corona_NLP_train.csv & Corona_NLP_test.csv](https://www.kaggle.com/datatasks/covid-19-nlp-text-classification)
+- **Fields**: `UserName`, `ScreenName`, `Location`, `TweetAt`, `OriginalTweet`, `Sentiment`
+- **Sentiment Labels**:
+  - `Positive`
+  - `Negative`
+  - `Neutral`
+  - `Extremely Positive`
+  - `Extremely Negative`
 
 ## Objectives
-
-- Preprocess and analyze COVID-19 tweet content
-- Build classification models to predict sentiment
-- Explore topics using LDA on both CountVectorizer and TF-IDF representations
-- Visualize latent topics and feature importance
-
-## Practical Applications
-
-This project reflects how NLP can assist **public health, policy, and communication teams** by:
-
-- **Tracking public sentiment during health crises**: Enables faster understanding of public reactions to announcements, restrictions, or events.
-- **Identifying misinformation**: Topic modeling can surface emerging concerns or conspiracy trends.
-- **Resource planning**: Analyzing geographic or temporal trends in sentiment can help allocate medical resources more effectively.
-- **Enhancing digital health communication**: Insights can guide more empathetic and effective messaging strategies.
-
-This analysis framework is adaptable to other **public sector or social media analytics** challenges, especially in domains requiring sentiment tracking over time.
+1. Merge relevant fields to form tweet context (`Location`, `TweetAt`, `OriginalTweet`)
+2. Clean and preprocess tweets (remove links, hashtags, special characters, etc.)
+3. Extract and lemmatize tokens
+4. Perform exploratory data analysis:
+   - Sentiment distribution
+   - Tweet length and word count visualization
+   - Top unigrams and bigrams by TF-IDF
+   - Token frequency and scores using `scattertext`
+5. Feature extraction using:
+   - CountVectorizer
+   - TfidfVectorizer
+   - Cosine similarity
+6. Classification Models:
+   - Random Forest (baseline)
+   - Random Forest with hyperparameter tuning (GridSearchCV)
+   - Logistic Regression, SVM, and Random Forest comparison
+7. Topic Modeling:
+   - LDA with CountVectorizer and TfidfVectorizer
+   - Visualization of top words per topic
+   - PCA-based topic space visualization
 
 ## Technologies Used
-
 - Python
-- Pandas, Scikit-learn, spaCy, Scattertext, Matplotlib, Seaborn
-- Latent Dirichlet Allocation (LDA)
-- Jupyter Notebook
+- Scikit-learn
+- NLTK & SpaCy
+- Seaborn & Matplotlib
+- Scattertext
+- pyLDAvis
+- Pandas & NumPy
+
+## Real-World Applications
+- **Health Policy Insights**: Track changes in public sentiment regarding vaccination, lockdowns, and public health messaging.
+- **Social Media Monitoring**: Identify misinformation trends or geographic hot spots based on tweet content.
+- **Crisis Communication**: Governments and NGOs can tailor communication strategies based on sentiment shifts and topic focus.
+- **Academic Research**: Provides a case study in real-time natural language understanding during a global health crisis.
+
+## Results Summary
+- Preprocessing led to improved text clarity and reduced noise.
+- Topic models revealed clear clusters around health concerns, government policy, and pandemic coping.
+
+## Status
+Complete. Ready for deployment, extension into time-series tweet tracking, or integration into a COVID-19 monitoring dashboard.
