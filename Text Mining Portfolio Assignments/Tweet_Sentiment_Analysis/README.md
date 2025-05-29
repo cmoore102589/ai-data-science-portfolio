@@ -1,33 +1,60 @@
-# Project 6 – Tweet Sentiment Classification (Sentiment140 Dataset)
+# Project 7 – Final COVID-19 Sentiment and Topic Modeling Analysis
 
 ## Overview
-
-This project focuses on building machine learning models to classify the sentiment of tweets using the Sentiment140 dataset. The process involves text preprocessing, vectorization, and classification using:
-- **Support Vector Machines (SVM)**
-- **Logistic Regression**
-- **Random Forest**
-- Hyperparameter optimization with **GridSearchCV**
+This project involves advanced natural language processing (NLP) and machine learning techniques to analyze and predict sentiments in tweets related to COVID-19. It uses the `Corona_NLP_train.csv` and `Corona_NLP_test.csv` datasets, which include tweet content along with associated metadata and labeled sentiments.
 
 ## Objectives
+- Preprocess and clean tweets from multiple metadata sources
+- Perform POS tagging and named entity recognition
+- Analyze text length and word counts using various visualizations
+- Conduct TF-IDF and frequency-based analysis
+- Build and evaluate classification models for sentiment analysis
+- Apply topic modeling (LDA) to discover latent themes in tweets
+- Visualize semantic distributions using PCA
 
-- Perform text cleaning and tokenization using NLTK and spaCy
-- Implement TF-IDF vectorization to represent tweet data numerically
-- Train baseline and optimized models to classify sentiment
-- Evaluate model performance using classification metrics
+## Key Steps
+1. **Data Cleaning**:
+   - Removed dates, URLs, hashtags, usernames, and special characters.
+   - Filtered short words and empty rows.
+2. **NLP Processing**:
+   - Part-of-speech tagging and Named Entity Recognition (NER)
+   - Visualization of dependency trees and specific entities like GEOLOCATION and MONEY
+3. **Tokenization & Lemmatization**:
+   - Converted raw text to tokens and extracted lemmatized versions
+4. **Text Analysis & Visualizations**:
+   - Visualized sentiment distributions, text length, and word counts
+   - Identified top unigrams and bigrams using TF-IDF
+   - Used Scattertext for sentiment token analysis
+5. **Feature Engineering**:
+   - Applied CountVectorizer and TfidfVectorizer with n-grams
+   - Calculated cosine similarity between tweets
+   - Computed average corpus vector
+6. **Modeling**:
+   - Built and evaluated three sentiment classification models using Random Forest, Logistic Regression, and SVM
+   - Tuned hyperparameters with GridSearchCV
+7. **Topic Modeling**:
+   - Constructed LDA models using both CountVectorizer and TfidfVectorizer
+   - Visualized topic distributions and dimensionality with PCA
+
+## Results
+- Achieved solid model performance across classifiers, with Random Forest showing high interpretability.
+- Discovered clear topic separations in COVID-19 discourse.
+- Gained meaningful insights from NER and token frequency analysis.
 
 ## Practical Applications
-
-This pipeline mirrors tools used in:
-- **Customer sentiment monitoring**: Automatically categorize user tweets into positive, negative, or neutral for brands or service providers.
-- **Reputation management**: Identify and escalate high-risk customer feedback.
-- **Trend forecasting**: Aggregated sentiment scores help predict market shifts or public mood.
-
-Implementing such sentiment analysis can help companies and researchers quickly distill actionable insights from vast social media streams and make data-informed decisions at scale.
+This project has valuable applications in the **healthcare, government, and social media sectors**:
+- **Public Health Monitoring**: Real-time detection of sentiment trends around policies, vaccines, and virus-related events.
+- **Crisis Communication**: Organizations can tailor messaging based on prevailing public sentiment.
+- **Information Surveillance**: Detection of misinformation or public anxiety spikes through topic modeling and sentiment tracking.
+- **Market Research**: Healthcare providers and pharmaceutical companies can use this model to understand public reactions to products or campaigns during pandemics.
 
 ## Technologies Used
-
-- Python
+- Python (Pandas, NumPy, Scikit-learn, SpaCy, Matplotlib, Seaborn, Scattertext, PyLDAvis)
 - Jupyter Notebook
-- Pandas, Scikit-learn, NLTK, spaCy
-- TF-IDF Vectorization, SVM, Logistic Regression, Random Forest
-- GridSearchCV for hyperparameter tuning
+- NLP: TfidfVectorizer, CountVectorizer, LDA, SpaCy NER
+- ML Models: Logistic Regression, Random Forest, Support Vector Machine
+
+## Files
+- `Corona_NLP_train.csv`
+- `Corona_NLP_test.csv`
+- `Project7_Moore_Matthew - Txt Mining.ipynb`
