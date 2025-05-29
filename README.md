@@ -49,8 +49,8 @@ Programming for embedded systems using the ELEGOO robot kit, integrating sensor 
 
 If you're interested in collaborating or discussing these projects, feel free to reach out:
 
-- **Email**: your.email@example.com  
-- **LinkedIn**: [linkedin.com/in/matthewmoore](https://linkedin.com/in/matthewmoore)
+- **Email**: cmoore102589@gmail.com 
+- **LinkedIn**: [linkedin.com/in/matthewcorleymoore](https://www.linkedin.com/in/matthewcorleymoore)
 
 ---
 
