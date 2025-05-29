@@ -1,57 +1,50 @@
-# AI & Machine Learning Portfolio by Matthew Moore
+👨🏾‍💻 AI & Machine Learning Portfolio — Matthew C. Moore
+Welcome to my collection of applied AI and machine learning projects, built during my Master’s in Artificial Intelligence and extended through personal exploration, curiosity, and a lot of hands-on experimentation.
 
-Welcome to my portfolio showcasing practical projects completed during my Master’s program in Artificial Intelligence and through independent exploration. These projects reflect hands-on experience across a range of AI disciplines including deep learning, text mining, reinforcement learning, and robotics.
+These aren’t just assignments—I treat each project like a mini-case study. Whether I’m training a neural network, building a reinforcement learning agent, or diving into NLP, I approach it with a practical mindset and a commitment to learning how AI can be used to solve real problems.
 
-Each folder in this repository represents a themed area of applied machine learning, with Jupyter Notebooks, HTML visualizations, and supporting documentation.
+🧭 What You’ll Find Here
+This repo is organized into focused areas of study. Every folder includes Jupyter Notebooks, HTML reports, and quick summaries to help you understand the why and the how behind each project.
 
----
+📂 Project Areas
+🧠 Deep Learning
+Neural networks applied to real-world classification and prediction tasks, including structured healthcare-style datasets and other supervised learning problems.
 
-## 📁 Project Categories
+📊 Text Mining
+Sentiment analysis, topic modeling, and document classification—all rooted in building pipelines that extract insights from messy human language.
 
-### 🧠 Deep Learning
-Projects focused on neural networks and supervised learning for tasks such as classification and medical risk prediction.
+🕹️ Reinforcement Learning
+Agents that learn from scratch—CartPole, LunarLander, and more. Each project reflects experiments with reward functions, policies, and decision-making under uncertainty.
 
-### 🔍 Text Mining
-End-to-end NLP pipelines including sentiment analysis, topic modeling, and document classification.
+🧮 Core AI & ML
+Foundational algorithms, lab-style exercises, and statistical explorations. These sharpened my understanding of what’s under the hood of today’s AI tools.
 
-### 🕹️ Reinforcement Learning
-Interactive agents trained using reward-based learning environments, with experiments implemented in Python.
+🤖 Robotics
+Hands-on programming with the ELEGOO robot kit. Sensor data, embedded logic, and the joy of watching physical hardware respond to your code.
 
-### 🧮 Fundamentals of AI
-Core statistical and ML concepts applied in structured experiments and lab-style assignments.
+🛠️ Tools & Libraries
+Python (pandas, scikit-learn, TensorFlow/Keras, XGBoost)
 
-### 🤖 Robotics
-Programming for embedded systems using the ELEGOO robot kit, integrating sensor data and basic autonomy.
+Visualization: matplotlib, seaborn, Plotly
 
----
+Dev Tools: JupyterLab, PyCharm, Git, GitHub
 
-## 📌 How to Navigate
+🗂️ Repo Structure
+Every project folder includes:
 
-- Each folder contains:
-  - `*.ipynb`: The original Jupyter Notebook code.
-  - `*.html`: Rendered reports or lab results (where applicable).
-  - `README.md`: A short summary of objectives, methods, and key takeaways.
+*.ipynb — Jupyter Notebook with code and explanations
 
-- The projects are organized to highlight **problem-solving**, **technical fluency**, and **real-world relevance**.
+README.md — Summary of the project’s goal, process, and key takeaways
 
----
+*.html — Rendered reports or visualizations (when applicable)
 
-## 🔧 Tech Stack
+The goal is clarity, not just code. I want you to understand what the model is doing and why the project matters.
 
-- Python (pandas, scikit-learn, TensorFlow/Keras, XGBoost)
-- JupyterLab & PyCharm
-- Matplotlib / Seaborn / Plotly
-- Git & GitHub for version control and collaboration
+👋🏾 Let’s Connect
+If any of this resonates with you—whether you’re building something, exploring ideas, or looking to collaborate—feel free to reach out:
 
----
+Email: cmoore102589@gmail.com
 
-## 📫 Contact
+LinkedIn: linkedin.com/in/matthewcorleymoore
 
-If you're interested in collaborating or discussing these projects, feel free to reach out:
-
-- **Email**: cmoore102589@gmail.com 
-- **LinkedIn**: [linkedin.com/in/matthewcorleymoore](https://www.linkedin.com/in/matthewcorleymoore)
-
----
-
-> ⚠️ Note: All work here is for educational demonstration purposes and draws from coursework, open datasets, and personal experiments.
+⚠️ Note: All projects are for learning and demonstration purposes. They use open datasets or simulations and are rooted in ethical, responsible AI development.
