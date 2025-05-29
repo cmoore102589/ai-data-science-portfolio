@@ -1,20 +1,20 @@
-# Fundamentals of AI - Project Part II
+# Fundamentals of AI - Project Part III
 
 ## Overview
-This module deep-dives into classic search algorithms to solve pathfinding and decision-making problems. It includes implementations and comparisons of BFS, DFS, UCS, GBF, and A* algorithms in structured grid environments.
+This project applies Genetic Algorithms (GAs) to solve the Job Assignment Problem, showcasing the ability of evolutionary strategies to optimize complex, non-linear problem spaces. It models fitness, mutation, and crossover to evolve optimal agent-job assignments.
 
 ## Key Features
-- Implemented uninformed and informed search algorithms.
-- Visualized agent pathfinding across grid-based maps.
-- Compared performance and efficiency based on heuristic quality.
+- Built a genetic algorithm from scratch with selection, crossover, and mutation logic.
+- Evaluated multiple generations for convergence and solution quality.
+- Visualized fitness score evolution and assignment efficiency.
 
 ## Practical Application
-Search algorithms form the foundation of:
-- GPS systems that compute shortest or safest travel routes.
-- Game AI where NPCs plan movements.
-- Robotics path planning in warehouse and rescue missions.
+Genetic Algorithms provide adaptive and scalable solutions to optimization challenges where traditional methods may fail:
+- **Workforce scheduling**: GAs can assign shifts across large teams with varying constraints, ensuring balanced workloads and operational efficiency in sectors like healthcare or logistics.
+- **Cloud resource allocation**: In data centers, GAs optimize how virtual machines are distributed across physical servers, improving utilization while minimizing energy costs.
+- **Complex design problems**: From circuit layouts to mechanical structures, GAs enable discovery of innovative configurations that meet design criteria without exhaustive brute-force methods, saving time and computational resources.
 
 ## Technologies Used
 - Python
-- Heuristic Design
-- Search Visualization
+- Genetic Algorithm Design
+- Optimization Techniques
