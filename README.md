@@ -1,4 +1,6 @@
-👨🏾‍💻 AI & Machine Learning Portfolio — Matthew C. Moore
+👨🏾‍💻 ## **AI & Machine Learning Portfolio — Matthew C. Moore**
+
+
 Welcome to my collection of applied AI and machine learning projects, built during my Master’s in Artificial Intelligence and extended through personal exploration, curiosity, and a lot of hands-on experimentation.
 
 These aren’t just assignments—I treat each project like a mini-case study. Whether I’m training a neural network, building a reinforcement learning agent, or diving into NLP, I approach it with a practical mindset and a commitment to learning how AI can be used to solve real problems.
